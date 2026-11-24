@@ -1,0 +1,390 @@
+#title-block-header { display: none; }
+
+        .cv-sidebar.panel-sidebar {
+          color: white;
+          padding: 0 !important;
+          border: none !important;
+          border-radius: 0;
+          align-self: stretch;
+          min-height: 0;
+          overflow: visible;
+        }
+        .cv-sidebar.panel-sidebar > .cell {
+          position: static;
+          max-height: none;
+          overflow: visible;
+        }
+        .cv-sidebar.panel-sidebar .cell-output {
+          padding: 0;
+        }
+        .cv-sidebar .cv-sidebar-field {
+          padding: 1rem 1rem 0.85rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .cv-sidebar .cv-sidebar-field--profile {
+          padding-top: 1.15rem;
+        }
+        .cv-sidebar .cv-sidebar-profile {
+          text-align: center;
+        }
+        .cv-sidebar .cv-sidebar-portrait {
+          display: block;
+          width: 5.25rem;
+          height: 5.25rem;
+          margin: 0 auto 0.85rem;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center top;
+          border: 2px solid rgba(255, 255, 255, 0.45);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+        }
+        .cv-sidebar .cv-sidebar-value {
+          font-size: 0.88rem;
+          line-height: 1.4;
+          margin: 0;
+        }
+        .cv-sidebar .cv-sidebar-label {
+          font-size: 1.32rem;
+          line-height: 1.3;
+          margin: 0 0 0.35rem;
+          font-weight: 700;
+          color: white;
+        }
+        .cv-sidebar .cv-sidebar-value {
+          color: rgba(255, 255, 255, 0.92);
+        }
+        .cv-sidebar .cv-sidebar-name {
+          font-size: 1.45rem;
+          font-weight: 700;
+          line-height: 1.2;
+          margin: 0 0 0.45rem;
+          color: white;
+        }
+        .cv-sidebar .cv-sidebar-value a {
+          color: white;
+          text-decoration: underline;
+          text-underline-offset: 0.15em;
+        }
+        .cv-sidebar .cv-sidebar-value a:hover {
+          color: rgba(255, 255, 255, 0.85);
+        }
+        .cv-sidebar .cv-sidebar-experience-list,
+        .cv-sidebar .cv-sidebar-simple-list {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+        .cv-sidebar .cv-sidebar-experience-item {
+          display: flex;
+          align-items: baseline;
+          gap: 0.65rem;
+          font-size: 0.82rem;
+          line-height: 1.35;
+          padding: 0.28rem 0;
+        }
+        .cv-sidebar .cv-sidebar-experience-metric {
+          display: inline-flex;
+          align-items: baseline;
+          gap: 0.22rem;
+          flex: 0 0 3.25rem;
+          color: white;
+        }
+        .cv-sidebar .cv-sidebar-experience-text {
+          font-weight: 700;
+          font-size: 1.05rem;
+          line-height: 1.1;
+        }
+        .cv-sidebar .cv-sidebar-experience-unit {
+          font-weight: 400;
+          font-size: 0.7rem;
+          color: rgba(255, 255, 255, 0.82);
+          line-height: 1.1;
+        }
+        .cv-sidebar .cv-sidebar-experience-label {
+          margin: 0;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 0.88);
+          text-align: left;
+          flex: 1;
+          min-width: 0;
+        }
+        .cv-sidebar .cv-sidebar-simple-list li {
+          font-size: 0.82rem;
+          line-height: 1.45;
+          padding: 0.28rem 0;
+          color: rgba(255, 255, 255, 0.92);
+        }
+        .cv-sidebar .cv-sidebar-flags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+          margin: 0;
+          align-items: center;
+        }
+        .cv-sidebar .cv-sidebar-flag img {
+          height: 1.1em;
+          width: auto;
+          vertical-align: -0.1em;
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          border-radius: 2px;
+          display: block;
+        }
+        .cv-sidebar .cv-sidebar-skills-list {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+        .cv-sidebar .cv-sidebar-skill-item {
+          display: flex;
+          align-items: center;
+          gap: 0.55rem;
+          font-size: 0.82rem;
+          line-height: 1.35;
+          padding: 0.3rem 0;
+          color: rgba(255, 255, 255, 0.92);
+        }
+        .cv-sidebar .cv-sidebar-skill-icon {
+          flex: 0 0 1.05rem;
+          width: 1.05rem;
+          text-align: center;
+          font-size: 0.82rem;
+          color: rgba(255, 255, 255, 0.88);
+        }
+        .cv-sidebar .cv-sidebar-skill-name {
+          flex: 1;
+          min-width: 0;
+        }
+        /* Row 1: sidebar 7 / paired main 17; row 2: full-width main */
+        .page-layout-custom {
+          overflow-x: auto;
+        }
+        body .page-layout-custom > .cv-main-full {
+          width: 100%;
+          min-width: 36rem;
+          box-sizing: border-box;
+          padding: 0 2rem 1.5rem;
+        }
+        body .page-layout-custom > .cv-main-full > .cell {
+          padding: 0;
+        }
+        body .page-layout-custom > .panel-grid.layout-sidebar {
+          display: grid !important;
+          grid-template-columns: 7fr 17fr !important;
+          width: 100%;
+          min-width: 36rem;
+          margin: 0 !important;
+          gap: 0;
+          align-items: stretch;
+        }
+        body .page-layout-custom > .panel-grid.layout-sidebar > .panel-sidebar,
+        body .page-layout-custom > .panel-grid.layout-sidebar > .panel-fill.panel-grid {
+          grid-column: auto !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          flex: none !important;
+        }
+        body .page-layout-custom > .panel-grid.layout-sidebar > .panel-fill.panel-grid {
+          padding-top: 0 !important;
+        }
+        @media print {
+          /* Screen ~100%; print root 78% (was 60%, ~+30% for rem/Bootstrap scale) */
+          html {
+            font-size: 72% !important;
+          }
+          #title-block-header,
+          header#title-block-header {
+            display: none !important;
+            height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+          }
+          body .page-layout-custom > .panel-grid.layout-sidebar {
+            display: grid !important;
+            grid-template-columns: 28% 72% !important;
+            min-width: 0;
+            width: 100%;
+          }
+          .cv-sidebar.panel-sidebar {
+            min-height: 100vh;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+          .cv-sidebar.panel-sidebar > .cell {
+            position: static !important;
+            max-height: none !important;
+            overflow: visible !important;
+          }
+          .page-layout-custom {
+            overflow: visible;
+          }
+          .panel-fill,
+          .panel-fill.cv-main-paired,
+          .panel-fill.panel-grid.g-col-lg-17,
+          body .page-layout-custom > .cv-main-full {
+            padding: 0.6rem 0.9rem !important;
+          }
+          .cv-sidebar .cv-sidebar-field {
+            padding: 0.55rem 0.65rem 0.5rem;
+          }
+          h2 {
+            margin-top: 0.65rem;
+            margin-bottom: 0.35rem;
+          }
+          .cell-output:has(#core-competencies) + .cell-output dt {
+            margin-top: 0.5rem;
+          }
+          .cv-application {
+            padding: 0.65rem 0.75rem 0.7rem 0.85rem;
+            box-shadow: none;
+          }
+          .cv-application-role {
+            font-size: 1.05rem;
+            margin-bottom: 0.45rem;
+          }
+          .cv-application-summary {
+            font-size: inherit;
+            line-height: 1.5;
+          }
+          .cv-map-interactive { display: none !important; }
+          .cv-map-print { display: block !important; }
+          .cv-map-print img { width: 100%; height: auto; }
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio,
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .gt_table,
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio table.table {
+            font-size: inherit !important;
+            line-height: 1.35 !important;
+          }
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .gt_row,
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .gt_col,
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio table.table td,
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio table.table th {
+            font-size: inherit !important;
+            line-height: 1.35 !important;
+            padding-top: 0.12rem !important;
+            padding-bottom: 0.12rem !important;
+            margin: 0 !important;
+          }
+          .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio p {
+            line-height: 1.35 !important;
+            margin: 0 !important;
+          }
+        }
+        .cv-map-print { display: none; }
+        .cv-map-disclaimer {
+          margin: 0.12rem 0 0;
+          text-align: left;
+          font-size: 0.75rem;
+          line-height: 1.35;
+          color: #4b5563;
+        }
+        .panel-fill {
+          padding: 1.5rem 2rem;
+        }
+        .panel-fill.panel-grid.g-col-lg-17 {
+          padding-top: 0 !important;
+          padding-bottom: 0;
+        }
+        .panel-fill.cv-main-paired {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        body .page-layout-custom > .cv-main-full {
+          padding-top: 0;
+        }
+
+        .cell-output:has(#professional-experience) + .cell-output .callout {
+          background-color: #ffffff;
+          border-left: 4px solid #9ca3af;
+        }
+        .cell-output:has(#professional-experience) + .cell-output .callout-header {
+          background-color: #f3f4f6;
+          padding-left: 1em;
+        }
+        .cell-output:has(#professional-experience) + .cell-output .callout-body-container,
+        .cell-output:has(#professional-experience) + .cell-output .callout-body {
+          background-color: #ffffff;
+        }
+        .cell-output:has(#professional-experience) + .cell-output .callout-body p {
+          margin-top: 0.2em;
+          margin-bottom: 0.2em;
+          line-height: 1.5;
+        }
+        h2, h2 strong { color: #008080; }
+        .cell-output:has(#core-competencies) + .cell-output dl {
+          margin: 0;
+        }
+        .cell-output:has(#core-competencies) + .cell-output dt {
+          font-weight: 700;
+          color: #696969;
+          margin-top: 1rem;
+        }
+        .cell-output:has(#core-competencies) + .cell-output dt:first-of-type {
+          margin-top: 0;
+        }
+        .cell-output:has(#core-competencies) + .cell-output dd {
+          margin: 0.35rem 0 0 0;
+          padding: 0.5rem 0 0.5rem 1rem;
+          border-left: 3px solid #696969;
+          line-height: 1.5;
+          color: #374151;
+        }
+        .cv-application {
+          margin: 0.15rem 0 0.5rem;
+          padding: 1rem 1.15rem 1.05rem 1.25rem;
+          border-left: 4px solid #007bbb;
+          background: linear-gradient(
+            135deg,
+            rgba(0, 123, 187, 0.06) 0%,
+            rgba(52, 73, 94, 0.04) 100%
+          );
+          border-radius: 0 6px 6px 0;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+        }
+        .cv-application-kicker {
+          display: inline;
+          margin: 0 0.45rem 0 0;
+          font-size: 0.72rem;
+          font-weight: 600;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #6b7280;
+          vertical-align: baseline;
+        }
+        .cv-application-role {
+          margin: 0 0 0.65rem;
+          font-size: 1.15rem;
+          font-weight: 700;
+          line-height: 1.35;
+          color: #007bbb;
+        }
+        .cv-application-summary {
+          margin: 0;
+          font-size: 0.95rem;
+          line-height: 1.65;
+          color: #374151;
+        }
+        .cv-project-portfolio {
+          margin: 0.25rem 0 0.5rem;
+          width: 100%;
+        }
+        .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .cv-project-gt-block {
+          margin-bottom: 0.17rem;
+        }
+        .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .cv-project-gt-block:last-child {
+          margin-bottom: 0;
+        }
+        /* Great Tables 既定 container の padding 10px・table の margin を約 1/3 に */
+        .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .cv-project-gt-block > div {
+          padding-top: 3px !important;
+          padding-bottom: 3px !important;
+        }
+        .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .gt_table,
+        .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio table.table {
+          width: 100%;
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+        }
+        .cell-output:has(#project-portfolio) + .cell-output .cv-project-portfolio .gt_row {
+          border-bottom-color: #e5e7eb;
+        }
